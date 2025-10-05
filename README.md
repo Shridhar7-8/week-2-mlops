@@ -209,41 +209,5 @@ dvc import --rev week_1 https://github.com/IITMBSMLOps/ga_resources.git data/v3/
 python train.py --data data/iris_v3.csv --model artifacts/model_v3.joblib --depth 5
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Submit a pull request
-
-## 📄 License
-
-This project is part of the MLOps course curriculum.
-
-## 🆘 Troubleshooting
-
-**Common Issues:**
-
-1. **GCS Authentication Error**
-   ```bash
-   gcloud auth application-default login
-   gcloud config set project YOUR_PROJECT_ID
-   ```
-
-2. **DVC Remote Error**
-   ```bash
-   dvc remote modify gcs_remote url gs://your-bucket-name/dvc-storage
-   ```
-
-3. **Python Environment Issues**
-   ```bash
-   python3 -m venv .env --clear
-   source .env/bin/activate
-   pip install --upgrade pip
-   ```
-
----
 
 **Happy MLOps! 🚀🎯📊**
